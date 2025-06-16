@@ -20,7 +20,7 @@ class Student {
 }
 
 
-const student = new Student("Alice", 85, "Alice is a diligent student who excels in mathematics.");
+const student = new Student("Alice", 85, "Alice is a  great student.");
 console.log(student.getBio()); 
 console .log()
 
@@ -46,7 +46,7 @@ app.get('/students/:name', (req, res) => {
     res.status(404).send('Student not found');
   }
 });
-//connect to MongoDB    
+   
  mongoose.connect('mongodb://localhost:27017/class')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
